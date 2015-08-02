@@ -15,7 +15,8 @@ def goodbuy():
 	print('Goodbuy!')
 
 # Listening SIGINT, SIGTERM and SIGHUP OS signals.
-# When it sended, listen() pop deferred functions from stack and call its one after the other.
+# When it sended, listen() pop deferred functions from stack
+# and call its one after the other.
 listen()
 
 # Main programm loop
