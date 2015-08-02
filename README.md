@@ -9,11 +9,13 @@ from pycloser import defer, listen, close
 def inform():
 	print('You close programm with Ctrl-C.')
 
+# Push goodbuy function to stack.
 @defer
 def goodbuy():
 	print('Goodbuy!')
 
-# Listening SIGINT, SIGTERM and SIGHUP OS signals. When it sended, listen() pop deferred functions from stack and call its one after the other.
+# Listening SIGINT, SIGTERM and SIGHUP OS signals.
+# When it sended, listen() pop deferred functions from stack and call its one after the other.
 listen()
 
 # Main programm loop
