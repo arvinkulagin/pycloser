@@ -2,7 +2,6 @@ import signal
 import sys
 
 EXIT_CODE_OK = 0
-# EXIT_CODE_ERROR = 1
 
 class Stack(object):
 	def __init__(self):
@@ -25,7 +24,6 @@ class Closer(object):
 		self.handlers = Stack()
 
 	def _signal_handler(self, signal, frame):
-		print("\b\b  ")
 		self.close()
 	
 	def defer(self, handler):
