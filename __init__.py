@@ -1,1 +1,0 @@
-from pycloser.closer import defer, listen, close
