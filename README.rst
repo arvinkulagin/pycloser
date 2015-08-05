@@ -2,7 +2,14 @@ pycloser
 ========
 
 Сlean exit for Python scripts after Ctrl-C. Inspired by `xlab’s Closer`_
-for Go (Golang). # Usage
+for Go (Golang).
+
+Installation
+---------
+pip install pycloser
+
+Usage
+---------
 
 .. code:: python
 
